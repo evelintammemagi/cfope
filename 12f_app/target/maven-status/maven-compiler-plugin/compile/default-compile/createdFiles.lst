@@ -1,0 +1,5 @@
+com\github\evelintammemagi\app\StockResource.class
+com\github\evelintammemagi\app\domain\model\StockItem.class
+com\github\evelintammemagi\app\domain\model\ItemType.class
+com\github\evelintammemagi\app\StockItemRepository.class
+com\github\evelintammemagi\app\StockSpringBootStarter.class

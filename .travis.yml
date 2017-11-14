@@ -1,0 +1,12 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: evelin.tammemagi+psw@gmail.com
+  api: https://api.run.pivotal.io
+  organization: evelinorg
+  space: development
+  password:
+    secure: U66EMpxzg1hflvYKkxFW28Xpo5TcjkbbwX+pKlK3rJWconoIHgLqHLcN4GT7j2/0Zl5vVfesj5NXIwdHNO6cofxjqQUhV109v96fhm3+BeIyv7TBDq0g1YpKH6MqJ4AaKVP/r2HpPh0V83Nr2KeJoqm3KH8ZNNmdDEWJZhEqRhUbxRlzgn/680ptilnxmsBRCLg+J1r7GQuAUwbhaIGWP+vBZJ23aOg9YXPwfkMloJAkBGUM7k/pbgAXddL/MFlbRQk7RvAxW8quCIiO5v5RpafeWge625pZd/oiwrKA93ynj1j18o/FMFnV7uoWpkgz4EbfZx1n4Daut8uOEoa3No0TR+yjhY+Su/B8PiIOCavaKG8f8a7NE99OvKdFL4aytKg/8TA0a2WepM1QHLzHPOpTtQh7SvaVu4nYIpE+XHBiwLYbtsJH722BJhihQQutTTzZZKU/i09hT2tg3H+bnfy2r8KtWxr3FM0op7p4gjP3Qen3fHbf0W3SiQ7GE128KoKop5dDhmv/Q7MQE8SEC8KMhStpRwt4dNca9kgaxJw6aDCALCh3UlFDc1MFui+nGH/BeoVOBx69cZGi1C8e0G/+6hfmTjuHkccKhY/zktHHPPv5rxOFv8BsQsNaWM/2sm0V6DFucyt0e/bbWrGFlxPl/7DqdxBrHNrnTUVUyfM=
